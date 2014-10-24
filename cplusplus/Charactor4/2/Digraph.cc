@@ -72,36 +72,36 @@ Digraph *Digraph::reverse()
 	return d;
 }
 
-int main(int argc, char **argv)
-{
-	if(argc != 2)
-	{
-		cout<<"argc !=2"<<endl;
-		exit(1);
-	}
-	Digraph *g = new Digraph(new In(argv[1]));	
-	for(int i=0; i < g->getVertices(); i++)
-	{
-		cout<<i<<": ";	
-		Digraph::Vertice *temp = g->getAdj(i);	
-		while(temp != NULL)
-		{
-			cout<<temp->value<<" ";	
-			temp = temp->next;
-		}
-		cout<<endl;
-	}
-	cout<<"reverse:"<<endl;
-	Digraph *d = g->reverse();
-	for(int i=0; i < d->getVertices(); i++)
-	{
-		cout<<i<<": ";	
-		Digraph::Vertice *temp = d->getAdj(i);	
-		while(temp != NULL)
-		{
-			cout<<temp->value<<" ";	
-			temp = temp->next;
-		}
-		cout<<endl;
-	}
-}
+//int main(int argc, char **argv)
+//{
+//	if(argc != 2)
+//	{
+//		cout<<"argc !=2"<<endl;
+//		exit(1);
+//	}
+//	Digraph *g = new Digraph(new In(argv[1]));	
+//	for(int i=0; i < g->getVertices(); i++)
+//	{
+//		cout<<i<<": ";	
+//		Digraph::Vertice *temp = g->getAdj(i);	
+//		while(temp != NULL)
+//		{
+//			cout<<temp->value<<" ";	
+//			temp = temp->next;
+//		}
+//		cout<<endl;
+//	}
+//	cout<<"reverse:"<<endl;
+//	Digraph *d = g->reverse();
+//	for(int i=0; i < d->getVertices(); i++)
+//	{
+//		cout<<i<<": ";	
+//		Digraph::Vertice *temp = d->getAdj(i);	
+//		while(temp != NULL)
+//		{
+//			cout<<temp->value<<" ";	
+//			temp = temp->next;
+//		}
+//		cout<<endl;
+//	}
+//}

@@ -75,18 +75,18 @@ int MaxPQ::max()
 }
 
 
-int main()
-{
-	MaxPQ *pq = new MaxPQ();
-	int v;
-	while(cin>>v)
-		pq->insert(v);
-	while(!pq->isEmpty())
-		cout<<pq->delMax()<<endl;
-//	cout<<"isempty: "<<pq->isEmpty()<<endl;
-//	cout<<"size: "<<pq->size()<<endl;
-//	cout<<"max: "<<pq->max()<<endl;
-//	cout<<"delMax: "<<pq->delMax()<<endl;
-//	cout<<"size: "<<pq->size()<<endl;
-//	cout<<"max: "<<pq->max()<<endl;
-}
+//int main()
+//{
+//	MaxPQ *pq = new MaxPQ();
+//	int v;
+//	while(cin>>v)
+//		pq->insert(v);
+//	while(!pq->isEmpty())
+//		cout<<pq->delMax()<<endl;
+////	cout<<"isempty: "<<pq->isEmpty()<<endl;
+////	cout<<"size: "<<pq->size()<<endl;
+////	cout<<"max: "<<pq->max()<<endl;
+////	cout<<"delMax: "<<pq->delMax()<<endl;
+////	cout<<"size: "<<pq->size()<<endl;
+////	cout<<"max: "<<pq->max()<<endl;
+//}
