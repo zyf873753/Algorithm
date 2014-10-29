@@ -16,6 +16,7 @@ public:
 	vector<int> *VReadInts();
 	int * ReadInts(int &n);
 	int ReadInt();
+	double ReadDouble();
 	In(char *file);
 private:
     ifstream ifs;

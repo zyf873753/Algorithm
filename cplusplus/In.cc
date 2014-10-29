@@ -51,6 +51,13 @@ int In::ReadInt()
 	return temp;	
 }
 
+double In::ReadDouble()
+{
+	double temp;
+	ifs>>temp;
+	return temp;
+}
+
 /*Following code is for testing*/
 //int main(int argc,char *argv[])/*{{{*/
 //{
